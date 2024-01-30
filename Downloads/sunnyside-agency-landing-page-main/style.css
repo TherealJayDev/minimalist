@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: "Fraunces";
+  letter-spacing: 0.5rem;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 6rem;
+}
+
+h2 {
+    font-family: "fraunces";
+    width: 65%;
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: "Barlow";
+    font-size: 2.5rem;
+    text-align: center;
+    opacity: 0.6;
+    margin-block: 10%;
+}
+
+h4 {
+    font-family: "Fraunces";
+    margin-top: 5rem;
+    margin-bottom: 0.7rem;
+    font-weight: 900;
+}
+
+p {
+    font-family: "fraunces";
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    color: black;
+    background: #ffff;
+    padding: 0.5rem 2rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 3rem;
+}
+
+header {
+    background: aliceblue;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+nav, nav ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding-inline: 3%;
+}
+
+
+nav .mainMenu, nav li{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav .mainMenu li a, nav li a {
+  display: inline-block;
+  padding: 0 2rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow";
+}
+
+nav .openMenu,
+.closeMenu {
+  cursor: pointer;
+  display: none;
+  font-size: 2rem;
+}
+
+  .hero-section {
+    background-image: url("./images/desktop/image-header.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+  }
+
+  .hero-text {
+    animation: slideTopIn 2s ease-out;
+    margin: 15% auto auto auto;
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .transform {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideRightIn 2s ease-out;
+  }
+
+  .mobile-transform, .mobile-transfor, .mobile-gallery {
+    display: none;
+  }
+
+  .transfor {
+    width: 100%;
+    animation: slideLeftIn 2s ease-out;
+  }
+
+  .card, .cards {
+    font-family: "Barlow";
+    text-align: start;
+    padding-inline: 15%;
+    padding-top: 30%;
+    animation: slideLeftIn 2s ease-out;
+  }
+
+  #trs {
+    text-decoration: none;
+    border-bottom: 1px solid hsl(51, 100%, 49%);
+    color: black;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.cards #trs {
+    border-bottom: 1px solid hsl(7, 99%, 70%);
+  }
+
+
+  .cards {
+    animation: slideRightIn 2s ease-out;
+  }
+
+  .gra {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideLeftIn 2s ease-out;
+    color: hsl(167, 40%, 24%);
+  }
+
+  .pho {
+    background-image: url('./images/desktop/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideRightIn 2s ease-out;
+    color: hsl(198, 62%, 26%);
+  }
+
+  #card {
+    font-family: "Barlow";
+    text-align: center;
+    padding-top: 60%;
+    padding-inline: 15%;
+  }
+
+  #card h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    grid-gap: 2rem;
+    padding-inline: 5%;
+    animation: slideTopIn 2s ease-out;
+  }
+
+  #test {
+    border-radius: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .gallery {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    animation: slideLeftIn 2s ease-out;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  footer {
+    background: hsl(168, 34%, 41%);
+    padding-block: 5%;
+    animation: slideRightIn 2s ease-out;
+  }
+
+  .footer-container {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    color: hsl(213, 9%, 39%);
+  }
+
+  #footer-logo{
+    width: 50%;
+    filter: contrast(0.6);
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer ul li, footer a {
+    text-decoration: none;
+    font-family: "Frauces";
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    color: hsl(213, 9%, 39%);
+    font-size: 2rem;
+    list-style: none;
+  }
+
+  .fa-brands, .fab {
+    padding: 0 1.5rem;
+    font-size: 2rem;
+  }
+  
+
+    @keyframes slideTopIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+   @keyframes slideRightIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+  @keyframes slideLeftIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    position: fixed;
+    padding: 0.5rem 0;
+  }
+
+  h1 {
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: initial;
+    margin-block: 20%;
+  }
+
+  button {
+    display: block;
+    color: black;
+    background: hsl(51, 100%, 49%);
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+  nav {
+    background: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 5%;
+  }
+
+  nav .mainMenu {
+    position: fixed;
+    top: 17%;
+    width: 90%;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 2s ease;
+    display: none;
+    background: white;
+    z-index: 5;
+  }
+
+  nav .mainMenu:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 0;
+    border-color: transparent transparent white transparent;
+    right: 0;
+    top: 0;
+    margin-top: -1rem;
+    transform: rotate(270deg);
+    overflow: hidden;
+    position: absolute;
+  }
+
+  nav .mainMenu li a {
+    color: gray;
+    padding-block: 1rem;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top: -5rem;
+    right: 0;
+  }
+
+  nav .openMenu {
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  .hero-section {
+    background-image: url("./images/mobile/image-header.jpg");
+  }
+
+  .hero-text {
+    margin: 30% auto auto auto;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    display: block;
+  }
+
+  .mobile-transform {
+    animation: slideRightIn 2s ease-out;
+  }
+
+  .mobile-transfor {
+    animation: slideLeftIn 2s ease-out;
+  }
+
+  .mobile-transform, .mobile-transfor {
+    display: block;
+    width: inherit;
+  }
+
+  .transform, .transfor, .gallery {
+    display: none;
+  }
+
+  .gra {
+    background-image: url('./images/mobile/image-graphic-design.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .pho {
+    background-image: url('./images/mobile/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .wrapper {
+    display: block;
+    padding-inline: 3%;
+  }
+
+  .card, .cards {
+    text-align: center;
+    padding-block: 25%;
+    padding-inline: 5%;
+  }
+
+  #card {
+    padding-top: 90%;
+    padding-inline: 2%;
+  }
+
+  #test {
+    width: 30%;
+  }
+
+  .client {
+    margin-bottom: 4rem;
+  }
+
+  .mobile-gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mobile-gallery img {
+    width: inherit;
+  }
+
+  footer {
+    padding-block: 10%;
+  }
+
+  #footer-logo {
+    width: 30%;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  footer a {
+    font-size: 1.5rem;
+  }
+
+  footer ul {
+    padding-inline: 10%;
+  }
+
+  .fa-brands, .fab {
+    font-size: inherit;
+    margin-bottom: 2rem;
+  }
+}
+ 
