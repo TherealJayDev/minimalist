@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2c88f01715.js"
+      crossorigin="anonymous"></script>
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="../intro-section-with-dropdown-navigation-main/images/logo.svg" alt=""></a>
+         <button class="open-btn"><i class="fa-solid fa-bars"></i></button>
+<div class="side-bar">
+     <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+     <!-- menu-items -->
+     <div class="menu">
+      <li class="item"><a href="#">Features
+      </a> <i class="fa fa-caret-down" id="down-btn"></i> <i class="fa fa-caret-up" id="up-btn"></i>
+    <!-- dropdown -->
+    <div class="sub-menu">
+      <i class="fa-solid fa-list-ul"><a href="#" class="sub-item">Todo List</a></i>
+      <i class="fa-solid fa-calendar-days"><a href="#" class="sub-item">Calender</a></i>
+      <i class="fa-solid fa-bell"><a href="#" class="sub-item">Reminders</a></i>
+      <i class="fa-solid fa-envelope"><a href="#" class="sub-item">Planning</a></i>
+    </div>
+    </li>
+      <li class="item"><a href="#">Company</a> <i class="fa fa-caret-down" id="downs-btn"></i> <i class="fa fa-caret-up" id="ups-btn"></i>
+      <!-- dropdown -->
+      <div class="sub-menus">
+      <a href="#" class="sub-item">History</a>
+      <a href="#" class="sub-item">Our Team</a>
+      <a href="#" class="sub-item">Blog</a>
+      </div>
+      </li>
+      <li class="item"><a href="#">Careers</a></li>
+      <li class="item"><a href="#">About</a></li>
+      <!-- other links -->
+     </div>
+        <div class="login">
+        <a href="#">Login</a>
+        <button id="btn">Register</button>
+      </div>
+</div>
+</header>
+
+    <!-- hero-section -->
+    <section>
+      <div class="hero-container">
+        <img class="hero-img-mob" src="../intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png" alt="">
+        <div class="hero-text">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+          <button class="hero-btn">Learn More</button>
+          <div class="imgs">
+            <img src="../intro-section-with-dropdown-navigation-main/images/client-databiz.svg" alt="">
+            <img src="../intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" alt="">
+            <img src="../intro-section-with-dropdown-navigation-main/images/client-meet.svg" alt="">
+            <img src="../intro-section-with-dropdown-navigation-main/images/client-maker.svg" alt="">
+          </div>
+        </div>
+        <img class="hero-img-desk" src="../intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png" alt="">
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- <button class="nav-btn">Register</button> -->
