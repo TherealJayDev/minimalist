@@ -10,6 +10,7 @@ body {
   background-image: url("/images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
   height: 100vh;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
