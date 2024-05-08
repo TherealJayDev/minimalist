@@ -1,0 +1,82 @@
+ <!-- <p>Minimalist Slaying</p>
+            <a href="">Read More</a> -->
+            !-- <p>A Woman's Power</p>
+            <a href="">Read More</a> -->
+             <!-- <p>The Simplicity of Men's Fashion</p>
+            <a href="">Read More</a> -->
+            <!-- <p>Where Fashion meets family</p>
+            <a href="#">Read More</a> -->
+
+             <div class="slides">
+            <!-- radio buttons starts -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- radio buttons end -->
+            <!-- slide images start -->
+            <div class="slide first">
+            <img src="hero-images/1.jpg" alt="">
+            
+                </div>
+                <div class="slide second">
+            <img src="hero-images/2.jpg" alt="">
+           
+            </div>
+            <div class="slide third">
+            <img src="hero-images/3.jpg" alt="">
+            
+            </div>
+            <div class="slide fourth">
+            <img src="hero-images/4.jpg" alt=""> 
+           
+            </div>
+            <!-- slide images end -->
+            <!-- automatic navigation starts -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- automatic navigation ends -->
+        </div>
+        <!-- manual navigation starts -->
+        <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        </div>
+
+
+        
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -22.7rem;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -45.4rem;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -68.05rem;
+}
+
+
+
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);

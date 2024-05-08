@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* header */
+
+header {
+     background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    font-family: 'Ubuntu sans mono';
+}
+
+.logo {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+/* search bar */
+
+#search {
+  position: relative;
+}
+
+.search-bar {
+    border-top: 1px solid black;
+  top: -100%;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  padding: 4% 5%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  transition: top 0.7s ease-in-out;
+  z-index: 98;
+}
+
+.search-bar p {
+  font-size: 0.8rem;
+}
+
+/* side-menu */
+
+.nav-menu {
+  position: fixed;
+  height: 100vh;
+  background: white;
+  top: 0;
+  padding: 7% 5% 0 5%;
+  left: -100%;
+  transition: left 1s ease;
+  right: 0;
+  width: 85%;
+  animation: slideLeftIn 1.5s ease-out;
+  z-index: 99;
+}
+
+.nav-links a,
+.nav-links,
+.nav-link,
+.nav-link a,
+.social-links {
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.nav-links {
+  border-bottom: 1px solid black;
+  display: flex;
+  padding-block: 1.8rem;
+  justify-content: space-between;
+  animation: slideLeftIn 1.5s ease-out;
+}
+
+.nav-link {
+  padding-block: 1.8rem;
+}
+
+#close-btn {
+  font-size: 1.5rem;
+}
+
+#drop-up,
+#drops-up,
+#dropss-up,
+#dropsss-up {
+  display: none;
+  transition: display 5s ease;
+}
+
+.nav-link:nth-child(2),
+.nav-link:nth-child(3) {
+  display: none;
+}
+
+.socials {
+  top: 90%;
+  background: white;
+  border-top: 1px solid black;
+  box-shadow: 0.5rem 1rem 1rem 2rem white;
+  padding-inline: 9%;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding-block-start: 1.5rem;
+  animation: slideBottomIn 1.5s ease-out;
+  z-index: 99;
+}
+
+/* drop menu */
+
+.sub-menu {
+  font-size: 0.8rem;
+  background: #007ba7;
+  color: white;
+  padding-inline: 5%;
+  max-height: 0;
+  overflow: scroll;
+  transition: max-height 0.5s ease;
+}
+
+.sub-menu h2 {
+  font-size: 1rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.6rem;
+  margin: 1rem 0 0.5rem 0;
+  animation: slideBottomIn 1.5s ease;
+}
+
+.sub-menu p {
+  line-height: 1.5rem;
+  animation: slideBottomIn 1.5s ease;
+}
+
+/* main */
+
+/* hero section */
+.hero {
+  width: 100%;
+  margin-top: 4.5rem;
+  font-family: 'work sans';
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+}
+
+.slide img {
+  width: 100vw;
+  height: 85vh;
+  filter: brightness(0.8);
+  object-fit: cover;
+  transition: 2s ease-out;
+  /* animation: slideBottomIn 3s ease; */
+}
+
+.slides input {
+  display: none;
+}
+
+.text {
+  position: relative;
+  color: white;
+  bottom: 20rem;
+  width: 100%;
+  filter: brightness(1);
+  text-align: center;
+  animation: slideBottomIn 3s infinite;
+}
+
+.text p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.text a {
+  text-decoration: none;
+  color: black;
+  filter: unset;
+  padding: 1.2rem;
+  background: white;
+  cursor: pointer;
+}
+
+.text a:hover {
+    background: whitesmoke;
+}
+
+.down-link {
+    z-index: 100;
+    position: relative;
+    background: white;
+  cursor: pointer;
+  color: black;
+  border-radius: 50%;
+  height: 15%;
+  padding: 1rem;
+  bottom: 9.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem 0.2rem white;
+  display: flex;
+  z-index: 99;
+  justify-content: center;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.down-link a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 2nd section */
+
+.introduction {
+    margin-top: -10rem;
+    width: 100%;
+}
+
+.partners {
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction img {
+    width: 20%;
+}
