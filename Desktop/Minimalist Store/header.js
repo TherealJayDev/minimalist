@@ -90,6 +90,7 @@ dropsssUp.addEventListener('click', function () {
   dropsssUp.style.display = 'none';
 });
 
+// timer for the slides
 let counter = 1;
 setInterval(function () {
   document.querySelector('#radio' + counter).checked = true;

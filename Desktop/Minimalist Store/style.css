@@ -5,32 +5,36 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    width: 100vw;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  width: 100vw;
 }
 
 body {
-    overflow-x: hidden;
+  /* overflow-x: hidden; */
+  background: white;
 }
 
 /* header */
 
 header {
-     background: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5%;
-    font-family: 'Ubuntu sans mono';
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  font-family: 'Ubuntu sans mono';
 }
 
 .logo {
   border: 1px solid black;
   padding: 0.5rem;
+  text-decoration: none;
+  color: black;
 }
 
 /* search bar */
@@ -40,7 +44,7 @@ header {
 }
 
 .search-bar {
-    border-top: 1px solid black;
+  border-top: 1px solid black;
   top: -100%;
   position: absolute;
   width: 100%;
@@ -70,7 +74,7 @@ header {
   right: 0;
   width: 85%;
   animation: slideLeftIn 1.5s ease-out;
-  z-index: 99;
+  z-index: 100;
 }
 
 .nav-links a,
@@ -156,6 +160,11 @@ header {
 /* main */
 
 /* hero section */
+
+main {
+  font-family: 'work sans';
+}
+
 .hero {
   width: 100%;
   margin-top: 4.5rem;
@@ -178,7 +187,7 @@ header {
   filter: brightness(0.8);
   object-fit: cover;
   transition: 2s ease-out;
-  /* animation: slideBottomIn 3s ease; */
+  animation: slideBottomIn 3s ease;
 }
 
 .slides input {
@@ -192,7 +201,7 @@ header {
   width: 100%;
   filter: brightness(1);
   text-align: center;
-  animation: slideBottomIn 3s infinite;
+  animation: slideBottomIn 4s infinite;
 }
 
 .text p {
@@ -210,13 +219,13 @@ header {
 }
 
 .text a:hover {
-    background: whitesmoke;
+  background: whitesmoke;
 }
 
 .down-link {
-    z-index: 100;
-    position: relative;
-    background: white;
+  z-index: 100;
+  position: relative;
+  background: white;
   cursor: pointer;
   color: black;
   border-radius: 50%;
@@ -225,7 +234,7 @@ header {
   bottom: 9.5rem;
   box-shadow: 0.2rem 0.2rem 1rem 0.2rem white;
   display: flex;
-  z-index: 99;
+  z-index: 97;
   justify-content: center;
   width: 15%;
   margin: 0 auto;
@@ -238,17 +247,123 @@ header {
 
 /* 2nd section */
 
-.introduction {
-    margin-top: -10rem;
-    width: 100%;
+.introductions {
+  margin-top: -10rem;
+  width: 100%;
 }
 
 .partners {
-    padding-inline: 2rem;
-    display: flex;
-    justify-content: space-between;
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.introduction img {
-    width: 20%;
+.introductions img {
+  width: 20%;
+}
+
+/* 3rd section */
+.introduction {
+  width: 100%;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.introduction-text {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-inline: 5%;
+}
+
+.introduction-text h2 {
+  font-weight: 400;
+  margin-block: 1rem;
+}
+
+.introduction-text a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.3rem;
+}
+
+.introduction-text a:hover, .introduction-text a:focus {
+    color: lightblue;
+}
+
+.introduction-imgs {
+    width: 100%;
+    padding-inline: 2%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.introduction-imgs img {
+    width: 50%;
+}
+
+/* 4th section */
+.shop-show {
+    width: 100%;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.shop-heading {
+    margin-bottom: 3rem;
+}
+
+.shop-heading p{
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+.exhibits {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+}
+
+.exhibits img {
+    width: 100vw;
+    height: 80%;
+    object-fit: contain;
+}
+
+.ex-btn {
+    margin-top: -5rem;
+}
+
+#left-btn, #right-btn, #left1-btn, #right1-btn,#left2-btn,#right2-btn, #left3-btn, #right3-btn, #left4-btn, #right4-btn {
+    background: grey;
+    filter: opacity(0.8);
+    transition: 2s;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#right-btn,#right1-btn,#right2-btn,#right3-btn,#right4-btn {
+    margin-left: 1rem;
+}
+
+.details {
+    margin-top: 3rem;
+    text-align: left;
+    padding-inline: 5%;
+}
+
+.shop-link {
+  text-decoration: none;
+  background: darksalmon;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
 }

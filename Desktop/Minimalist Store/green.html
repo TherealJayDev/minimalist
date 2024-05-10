@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimalist Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="green.css" />
+    <script
+      src="https://kit.fontawesome.com/2c88f01715.js"
+      crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Kurale&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <i class="fa-solid fa-bars" id="open-btn"></i>
+      <!-- navigation menu -->
+      <nav>
+        <ul class="nav-menu">
+          <i class="fa-solid fa-times" id="close-btn"></i>
+          <li class="nav-links">
+            <a href="#">Shop</a>
+            <i class="fa-solid fa-chevron-down" id="drop-down"></i
+            ><i class="fa-solid fa-chevron-up" id="drop-up"></i>
+          </li>
+          <div class="shop sub-menu">
+            <div>
+              <h2>Categories</h2>
+              <p>All Clothing</p>
+              <p>Dresses</p>
+              <p>Tops</p>
+              <p>Denims</p>
+              <p>Skirts</p>
+            </div>
+            <div>
+              <h2>Accessories</h2>
+              <p>All Accessories</p>
+              <p>Wristwatches</p>
+              <p>Necklaces</p>
+              <p>Bags</p>
+              <p>Headwears and Scarves</p>
+              <p>Earrings</p>
+            </div>
+            <div>
+              <h2>Occasions</h2>
+              <p>Millenial</p>
+              <p>Date Night</p>
+              <p>Vacation</p>
+              <p>Casual Wear</p>
+            </div>
+            <div>
+              <h2>Art</h2>
+              <p>All Art</p>
+              <p>Denim painted pants</p>
+              <p>Painted Shirts</p>
+              <p>Canvas Prints</p>
+              <p>African Crafts</p>
+            </div>
+          </div>
+          <li class="nav-links">
+            <a href="#">Journal</a>
+            <i class="fa-solid fa-chevron-down" id="drops-down"></i
+            ><i class="fa-solid fa-chevron-up" id="drops-up"></i>
+          </li>
+          <div class="journal sub-menu">
+            <div>
+              <h2>Journal</h2>
+              <p>Behind the Collection</p>
+              <p>Muses</p>
+              <p>Styling Tips</p>
+              <p>Sustainability</p>
+              <p>Cultural Refrences</p>
+            </div>
+          </div>
+          <li class="nav-links">
+            <a href="#">Collections</a
+            ><i class="fa-solid fa-chevron-down" id="dropss-down"></i
+            ><i class="fa-solid fa-chevron-up" id="dropss-up"></i>
+          </li>
+          <div class="collections sub-menu">
+            <h2>Collections</h2>
+            <p>A Story about Love</p>
+            <p>A Story about Art</p>
+            <p>A Story inspired by the Moon</p>
+            <p>Spring in Paradise</p>
+          </div>
+          <li class="nav-links">
+            <a href="#">About </a
+            ><i class="fa-solid fa-chevron-down" id="dropsss-down"></i
+            ><i class="fa-solid fa-chevron-up" id="dropsss-up"></i>
+          </li>
+          <div class="about sub-menu">
+            <div>
+              <h2>Categories</h2>
+              <p>About Us</p>
+              <p>Press</p>
+              <p>Journal</p>
+              <p>Contact</p>
+            </div>
+          </div>
+          <ul class="extras">
+            <li class="nav-link">
+              <a href="#">Account</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Search</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Cart <span class="cart">(0)</span></a>
+            </li>
+          </ul>
+          <div class="socials">
+            <a href="#" class="social-links"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-links"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="social-links"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="social-links"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+          </div>
+        </ul>
+      </nav>
+      <a href="" class="logo">Minimalist Store</a>
+      <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+      <div class="search-bar">
+        <p>Search</p>
+        <i class="fa-solid fa-times" id="end-btn"></i>
+      </div>
+      <i class="fa-solid fa-bag-shopping"></i>
+    </header>
+
+    <section class="checkout">
+      <nav>
+        <ul class="check">
+          <li><a href="home.html">Home</a></li>
+          <li><span> > </span> Green Gown</li>
+        </ul>
+      </nav>
+      <div class="exhibit1">
+        <img src="dresses/dress1.jpg" alt="" class="green" />
+        <button class="zoom" aria-label="zoom">+</button>
+      </div>
+      <div class="tag">
+        <p>Green Gown</p>
+        <span>$135.00</span>
+      </div>
+      <div class="payment-btns">
+        <button type="" class="cart-btn">ADD TO CART</button>
+        <button type="" class="other-btn">Buy with <span>CARD</span></button>
+      </div>
+      <div class="info">
+        <p>The Green Gown are flattering for all body sizes and feature an elasticized band for utmost comport.</p>
+        <ul>
+          <li>Green Gown</li>
+          <li>Elasticized full body length</li>
+          <li>Sustainable manufacturing process by local artisans communities</li>
+          <li>Hancrafted in our small factory in Lagos, Nigeria</li>
+          <li>100% polyester</li>
+          <li>Model is 6"2 and wearing a size XL</li>
+        </ul>
+        <p>CARE</p>
+        <p>Machine wash cold with similar solors. Hang dry.</p>
+      </div>
+    </section>
+    <script src="green.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>

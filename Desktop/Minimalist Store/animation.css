@@ -34,17 +34,17 @@
 }
 
 #radio2:checked ~ .first {
-  margin-left: -100%;
+  margin-left: -100vw;
   transition: margin-left 2s ease;
 }
 
 #radio3:checked ~ .first {
-  margin-left: -200%;
+  margin-left: -200vw;
   transition: margin-left 2s ease;
 }
 
 #radio4:checked ~ .first {
-  margin-left: -300%;
+  margin-left: -300vw;
   transition: margin-left 2s ease;
 }
 
